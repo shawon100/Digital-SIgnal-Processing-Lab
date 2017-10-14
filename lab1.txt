@@ -1,0 +1,72 @@
+
+**************1*************
+
+>> t=0:0.01:2;
+>> x=sin(2*pi*t);
+>> plot(t,x,'b');
+>> xlabel('t in sec');
+>> title('plot of sin(2\pi t)');
+
+
+*************2**************
+
+n=0:1:40;
+x=sin(0.1*pi*n);
+Hs=stem(n,x,'r','filled');
+set(Hs, 'markersize', 4);
+xlabel('n'); ylabel('x(n)');
+title('stem plot of sin (0.2 pi n)');
+
+**************3***************
+
+t=0:1:40;
+x=sin(2*pi*t);
+y=cos(2*pi*t);
+figure(1);
+Hs=stem(t,x,'r','filled');
+set(Hs, 'markersize', 4);
+figure(2);
+H=stem(t,y,'r','filled');
+set(Hs, 'markersize', 4);
+xlabel('t'); ylabel('x(t)');
+title('sin and cosine wave');
+
+***************4***************
+
+t=0:1:40;
+x=sin(.2*pi*t);
+y=sin(.2*pi*4*t);
+figure(1);
+plot(t,x,'b');
+hold on;
+plot(t,y,'b');
+xlabel('t'); ylabel('x(t)');
+
+**************5******************
+
+n=[-5:5];
+l=4;
+x=[n-l==0];
+stem(n,x,'b');
+
+**************6******************
+
+%(write in editor)
+
+function[x,n]=impseq(pos, s_s, s_e);
+n=[s_s:s_e];
+x=[n-pos==0];
+
+%(write in command)
+
+ n=[-5:5];
+ z=impseq(3,-5,5);
+ stem(n,z);
+**************7*********************
+
+n=[-5:5];
+z=1.*impseq(0,-5,5)+4.*impseq(1,-5,5)-2.*impseq(2,-5,5)+2.*impseq(3,-5,5)+3.*impseq(4,-5,5);
+stem(n,z);
+
+*************homework********
+step signal

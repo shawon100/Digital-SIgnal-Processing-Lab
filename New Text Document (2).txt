@@ -1,0 +1,183 @@
+    ----------------------------------------------------
+	Your MATLAB license will expire in 35 days.
+	Please contact your system administrator or
+	MathWorks to renew this license.
+    ----------------------------------------------------
+>> a=[1,2,3,4]
+
+a =
+
+     1     2     3     4
+
+>> b=[2,2,2,2]
+
+b =
+
+     2     2     2     2
+
+>> a-b
+
+ans =
+
+    -1     0     1     2
+
+>> a+b
+
+ans =
+
+     3     4     5     6
+
+>> a/b
+
+ans =
+
+    1.2500
+
+>> a./b
+
+ans =
+
+    0.5000    1.0000    1.5000    2.0000
+
+>> a*b
+Error using  * 
+Inner matrix dimensions must agree.
+ 
+>> b=b'
+
+b =
+
+     2
+     2
+     2
+     2
+
+>> a*b
+
+ans =
+
+    20
+
+>> b=.b'
+ b=.b'
+   |
+Error: Unexpected MATLAB operator.
+ 
+>> zeros(1.5)
+Warning: Size input contains non-integer values. This will error in a future release. Use
+FLOOR to convert to integer values. 
+
+ans =
+
+     0
+
+>> zeros(1,5)
+
+ans =
+
+     0     0     0     0     0
+
+>> ones(1,5)
+
+ans =
+
+     1     1     1     1     1
+
+>>  t = 0:0.01:2;
+>> x = sin(2*pi*t);
+>>  plot(t,x,'b');
+>>  xlabel(’t in sec’); ylabel(’x(t)’);
+  xlabel(’t in sec’); ylabel(’x(t)’);
+         |
+Error: The input character is not valid in MATLAB statements or expressions.
+ 
+>>  xlabel(’t in sec’); ylabel(’x(t)’);
+  xlabel(’t in sec’); ylabel(’x(t)’);
+         |
+Error: The input character is not valid in MATLAB statements or expressions.
+ 
+>>  xlabel('t in sec'); ylabel('x(t)');
+>> 
+>>  xlabel('t in sec');
+>> ylabel('x(t)');
+>> title('Plot of sin(2\pi t)');
+>> 
+>>  title('Plot of sin(2\pi t)')
+>> x = cos(2*pi*t);
+>> t = 0:0.01:2;
+>> x = cos(2*pi*t);
+>> plot(t,x,'b');
+>> t = 0:0.01:2;
+>> x = sin(2*pi*t);
+>> stem(t,x,'b','filled');
+>> 
+>> t = 0:0.01:2;
+>> x = sin(2*pi*t);
+>> subplot(1,2,1)
+>> stem(t,x,'b','filled');
+>> subplot(1,2,2)
+>> plot(t,x,'b');
+>> figure(1);
+>> plot(t,x,'b');
+>> figure(2);
+>> stem(t,x,'b','filled');
+>> figure(2);
+>> stem(t,x,'b','filled');
+>> t = 0:0.01:2;
+>> x = sin(2*pi*t);
+>> x = sin(2*pi*2t);
+ x = sin(2*pi*2t);
+               |
+Error: Unexpected MATLAB expression.
+ 
+>> x = sin(2*pi*2*t);
+>> figure(1);
+>> plot(t,x,'b');
+>> hold on;
+>> plot(t,y,'r');
+Undefined function or variable 'y'.
+ 
+>> t = 0:0.01:2;
+>> x = sin(2*pi*2*t);
+>> y = sin(2*pi*2*t);
+>> figure(1);
+>> plot(t,x,'b');
+>> hold on;
+>> plot(t,y,'b');
+>> plot(t,y,'r');
+>> t = 0:0.01:2;
+>> x = sin(2*pi*t);
+>> y = sin(2*pi*2*t);
+>> figure(1);
+>> plot(t,y,'b');
+>> hold on;
+>> plot(t,x,'r');
+>> t = 0:0.01:2;
+>> 
+>> 
+>> 
+>> a=imseq(4,-4,8);
+Undefined function 'imseq' for input arguments of type 'double'.
+ 
+>> addpath('C:\Users\student\Desktop')
+>> a=imseq(4,-4,8);
+>> n=[-4:8]
+
+n =
+
+    -4    -3    -2    -1     0     1     2     3     4     5     6     7     8
+
+>> stem(n,a,'b');
+>> 
+>> z=2.*imseq(4,-4,8)+3.*imseq(-1,-4,8)+4.*imseq(-2,-4,8)-5.*imseq(3,-4,8);
+>> stem(n,z);
+>> 
+>> z=unistep(3,-4,8)-unistep(4,-4,8);
+>> stem(n,z);
+>>  n = [0:10]; x = (0.9).^n;
+>> stem(n,x);
+>> x = exp((2+3*j)*n);
+>> stem(n,x);
+>> x = exp((2+3j)*n);
+>> stem(n,x);
+>> 

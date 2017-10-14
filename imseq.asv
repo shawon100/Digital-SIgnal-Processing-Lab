@@ -1,0 +1,3 @@
+function [x,n]=imseq(n0,n1,n2)
+
+     
